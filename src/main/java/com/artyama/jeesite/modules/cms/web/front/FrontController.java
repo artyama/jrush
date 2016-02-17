@@ -67,6 +67,7 @@ public class FrontController extends BaseController{
 		Site site = CmsUtils.getSite(Site.defaultSiteId());
 		model.addAttribute("site", site);
 		model.addAttribute("isIndex", true);
+		System.out.println(""+site.getTheme());
 		return "modules/cms/front/themes/"+site.getTheme()+"/frontIndex";
 	}
 	
